@@ -6,7 +6,7 @@ Sistem Pemesanan Restoran adalah aplikasi sederhana berbasis **React.js** (Front
 ## 🛠️ Cara Menjalankan Aplikasi
 ### 1. clone repository :
 ```
-git clone
+git clone https://github.com/IndraAjiyanto/test-magang.git
 ```
 ### 2. menjalankan back-end :
 ```
@@ -14,18 +14,23 @@ cd back-end
 npm install
 npm run back-end
 ```
+port yang digunakan = `localhost:3001`
+
 ### 3. menjalankan front-end :
 ```
 cd front-end
 npm install
 npm run front-end
 ```
+port yang digunakan = `localhost:3000`
+
+---
 
 ## 🚀 Fitur Utama
 
 ### REST API
-- **GET `localhost:3001/menu`**  
-  Mengirimkan data semua menu makanan dan minuman ke frontend.
+**GET `localhost:3001/menu`**  
+Mengirimkan data menu makanan dan minuman ke frontend.
 ```json
 [
   { "id": 1, "nama": "Nasi Goreng", "harga": 25000 },
@@ -35,12 +40,15 @@ npm run front-end
 ]
 ```
 
-- **POST `localhost:3001/order`**  
-  Menerima data pesanan dari frontend, lalu mengembalikan:
-  - Total harga pesanan
-  - Pajak sebesar **10%**
-  - Diskon **10%** jika total pesanan sebelum pajak lebih dari **Rp50.000**
-  yang sudah di hitung otomatis.
+---
+
+**POST `localhost:3001/order`**  
+Menerima data pesanan dari frontend, lalu mengembalikan:
+- Total harga pesanan
+- Pajak sebesar **10%**
+- Diskon **10%** jika total pesanan sebelum pajak lebih dari **Rp50.000**
+
+yang sudah di hitung otomatis.
 
 request :
 ```json
@@ -81,7 +89,7 @@ respon :
     "total": 72270
 }
 ```
-
+---
 
 ### Menampilkan daftar menu makanan dan minuman
 Data yang ditampilkan diambil melalui endpoint API dari back-end(`/menu`).
@@ -90,15 +98,15 @@ Data yang ditampilkan diambil melalui endpoint API dari back-end(`/menu`).
 
 ---
 
-### Dapat memilih beberapa menu yang ingin dipesan.
+### Memilih beberapa menu yang ingin dipesan
 Klik **Tombol "Pesan"** untuk memesan menu yang diinginkan.
 
 ![image](https://github.com/user-attachments/assets/2afb4622-a8e4-47ec-95fa-2e6697877271)
 
 ---
 
-### Menampilkan total harga otomatis, termasuk pajak dan diskon.
-**Tombol "Kirim Pesanan"** untuk mengirim data pesanan ke back-end (`/order`).
+### Menampilkan total harga otomatis, termasuk pajak dan diskon
+**Tombol "Kirim Pesanan"** untuk mengirim data pesanan ke endpoint API dari back-end(`/order`).
 
   ![image](https://github.com/user-attachments/assets/a8fba165-5944-42e5-a2eb-53d9b96ee5c8)
   
@@ -106,7 +114,7 @@ Klik **Tombol "Pesan"** untuk memesan menu yang diinginkan.
 
 ## 📒 Fitur Bonus
 
-### Menampilkan **struk pesanan** yang berisi:
+### Menampilkan **struk pesanan** yang berisi
   - Daftar pesanan
   - Total harga
   - Pajak
@@ -116,14 +124,14 @@ Klik **Tombol "Pesan"** untuk memesan menu yang diinginkan.
 
 ---
 
-### **menghapus atau membatalkan** pesanan yang sudah dipilih.
+### **Menghapus atau membatalkan** pesanan yang sudah dipilih
 Klik **Tombol "-"** untuk membatalkan menu makanan/minuman yang dipesan.
 
-![image](https://github.com/user-attachments/assets/5f680bfc-8532-4db4-b038-0ac558e78e06)
+![image](https://github.com/user-attachments/assets/2afb4622-a8e4-47ec-95fa-2e6697877271)
 
 ---
 
-### **Tombol "Simpan Struk"** akan menyimpan data struk dalam format json.
+### **Tombol "Simpan Struk"** akan menyimpan data struk dalam format txt
   ![image](https://github.com/user-attachments/assets/18dc6cd5-ceb6-4a3e-bae4-21df028f206e)
 
 ---
