@@ -1,0 +1,26 @@
+.order {
+  flex: 1;
+}
+
+.list-order {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.item-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 10px;
+  background: rgb(227, 249, 227);
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.empty {
+  font-style: italic;
+  color: rgb(153, 153, 153);
+}

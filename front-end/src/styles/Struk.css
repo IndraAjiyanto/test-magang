@@ -1,0 +1,40 @@
+.struk {
+  margin-top: 3rem;
+  padding: 20px;
+  background-color: rgb(227, 249, 227);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.struk-title {
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.struk-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.label {
+  font-weight: normal;
+}
+
+.price {
+  font-weight: normal;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(198, 198, 198);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
